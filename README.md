@@ -11,7 +11,21 @@ https://drive.google.com/file/d/1AJJ1OmYYeNQmCVLgoYRhCp5ocvxrfJdk/view?usp=drive
 
 The description of the variables and the format in which they should be imputed can be found in the variables.xlsx file and the test sheet, test_file.xlsx.
 
-All files must be extracted into the working directory in order to be modified in the testing.R file. This is the default directory.
+All files must be extracted into the working directory in order to be modified in the testing.R file. This is the default directory. (required packages: igraph, readxl and stringr)
 
 setwd("D:/hemofilia_github")
+
+To test the model, simply run the testing.R file in RStudio. The model will then return a ‘final_results.csv’ spreadsheet in the same working directory.
+
+For each patient tested, the ‘robustness’ column will measure the degree of information provided by the patient's variables. A value of 0 will indicate low confidence, while a value of 1 will indicate high confidence. The value 0 indicates that the patient provided minimal or no relevant information, while a value of 1 signifies that the patient provided all relevant information.
+
+The 'warning' column comprises three levels: low, medium, and high, which represent the degree of attention that the healthcare professional should pay to the patient. 
+
+Three probabilities are provided for inhibitor development (%).
+
+"Min_probability" "Max_probability" and "True_probability".
+
+The probability of inhibitor development for the patient is situated between the minimum and maximum values. The true probability indicates the likelihood of inhibitor development for the patient.
+
+Should any difficulties be encountered in utilising the trained model, we kindly request that you contact us via email at tiagoschieber@face.ufmg.br.
 
