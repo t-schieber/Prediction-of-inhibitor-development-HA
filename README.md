@@ -11,7 +11,7 @@ https://drive.google.com/file/d/1AJJ1OmYYeNQmCVLgoYRhCp5ocvxrfJdk/view?usp=drive
 
 The description of the variables and the format in which they should be inputted can be found in the variables.xlsx file and the test sheet, test_file.xlsx.
 
-All files must be extracted into the working directory to be modified in the testing.R file. This is the default directory. (required packages: igraph, readxl and stringr)
+All files must be extracted into the working directory to be modified in the testing.R file. This is the default directory. (required packages: igraph (version 1.2.5), readxl (version 1.3.1) and stringr (version 1.4.0)).
 
 setwd("D:/hemofilia_github")
 
